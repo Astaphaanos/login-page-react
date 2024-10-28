@@ -26,7 +26,7 @@ const Login = () => {
                 <div className="senha-form-container">
                     <input 
                     type={showPassword ? 'text' : 'password'} 
-                    placeholder="Digite uma senha de 8 caracteres ou mais" 
+                    placeholder="Digite sua senha" 
                     className="login-input"/>
                     <span onClick={() => setShowPassword(!showPassword)} className='toggle-password'>
                         {showPassword ? <FiEyeOff/> : <FiEye/>}
