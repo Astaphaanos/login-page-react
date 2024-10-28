@@ -1,0 +1,98 @@
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-cadastro-welcome {
+    width: 600px;
+}
+
+.form-cadastro-welcome h1{
+    font-size: 50px;
+    color: #3160ED;
+    margin: 0;
+}
+
+.form-cadastro-welcome p {
+    color: #595959;
+    font-size: 18px;
+}
+
+.form-cadastro-welcome img {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container span {
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-container h2 {
+    font-size: 40px;
+    color: #3160ED;
+    margin-top: 0;
+} 
+
+.login-input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #d8e1f5;
+    border: none;
+    border-radius: 10px;
+}
+
+.senha-form-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #595959;
+}
+
+.btn-login {
+    width: 328px;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #3160ED;
+    margin-top: 30px;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #4070ff;
+}
+
+.options label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #595959;
+    font-size: 14px;
+    margin-top: 10px;
+}
+

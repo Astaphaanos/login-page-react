@@ -1,0 +1,154 @@
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-login-welcome {
+    width: 600px;
+}
+
+.form-login-welcome h1{
+    font-size: 50px;
+    color: #3160ED;
+    margin: 0;
+}
+
+.form-login-welcome p {
+    color: #595959;
+    font-size: 18px;
+}
+
+.form-login-welcome img {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-form-container h2 {
+    font-size: 40px;
+    color: #3160ED;
+    margin-bottom: 10px;
+} 
+
+.login-form-container span {
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #d8e1f5;
+    border: none;
+    border-radius: 10px;
+}
+
+.senha-form-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #595959;
+    margin-bottom: 10px;
+}
+
+.options label{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.options a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #595959;
+}
+
+.btn-login {
+    width: 328px;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: #3160ED;
+
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #4070ff;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #595959;
+    width: 320px;
+}
+
+.divisor::before, 
+.divisor::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #595959;
+    margin: 0 10px;
+}
+
+.social-login{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-btn {
+    background-color: #D8E1F5;  
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.google { color: #db4437; }
+.apple { color: #000000; }
+.facebook { color: #1877f2; }
+
+
+
