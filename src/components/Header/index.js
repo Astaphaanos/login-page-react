@@ -17,17 +17,15 @@ const Header = () => {
                 </ul>
 
                 <div className="header-login">
-                    <Link to='/login'>
+                    <Link to='/'>
                         <span 
-                        className="login-header-span" 
-                        onClick={() => navigate('/login')}>
+                        className="login-header-span">
                             Entrar
                         </span>
                     </Link>
                     <Link to='/cadastro'>
                         <span 
-                        className="cadastrar-header-span"
-                        onClick={() => navigate('/cadastro')}>
+                        className="cadastrar-header-span">
                             Cadastrar
                         </span>
                     </Link>
