@@ -39,23 +39,23 @@ const Cadastro = () => {
   };
 
   return (
-    <section className="form">
+    <section className="form-cadastro">
       <div className="form-cadastro-welcome">
         <h1>Cadastre-se na nossa plataforma</h1>
         <p>Uma nova jornada de produção está prestes a começar!</p>
         <img src="images/data.png" alt="data" />
       </div>
 
-      <div className="form-container">
+      <div className="form-container-cadastro">
         
         <form onSubmit={handleSubmit}>
           <span>Cadastre-se</span>
           <h2>Crie uma conta gratuitamente</h2>
           
-          <div className="user-form-container">
+          <div className="user-cadastro-container">
             <input type="text" 
             placeholder="Usuário" 
-            className="login-input" 
+            className="login-input-cadastro" 
             name="usuario"
             value={values.usuario}
             onChange={handleChange}
@@ -63,23 +63,23 @@ const Cadastro = () => {
             {erros.usuario && <p className="erro-mensagem">{erros.usuario}</p>}
           </div>
 
-          <div className="login-form-container">
+          <div className="login-cadastro-container">
             <input 
             type="email" 
             placeholder="E-mail" 
             name="email"
-            className="login-input" 
+            className="login-input-cadastro" 
             value={values.email}
             onChange={handleChange}
             />
             {erros.email && <p className="erro-mensagem">{erros.email}</p>}
           </div>
 
-          <div className="senha-form-container">
+          <div className="senha-cadastro-container">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Digite uma senha de 8 caracteres ou mais"
-              className="login-input"
+              className="login-input-cadastro"
               name="senha"
               value={values.senha}
               onChange={handleChange}
@@ -98,7 +98,7 @@ const Cadastro = () => {
           </button>
         </form>
 
-        <div className="options">
+        <div className="options-cadastro">
           <label>
             <input type="checkbox" /> Concordo com os Termos e Condições
           </label>

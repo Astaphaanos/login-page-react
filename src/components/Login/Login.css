@@ -1,5 +1,5 @@
 
-.form {
+.form-login {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -22,23 +22,23 @@
 }
 
 .form-login-welcome img {
-    width: 400px;
+    width: 480px;
     margin-left: 50px;
 }
 
-.form-container {
-    width: 500px;
+.form-login-container {
+    width: 400px;
     padding: 20px;
     text-align: center;
 }
 
-.login-form-container h2 {
+.login-container h2 {
     font-size: 40px;
     color: #3160ED;
     margin-bottom: 10px;
 } 
 
-.login-form-container span {
+.login-container span {
     color: #595959;
     text-transform: uppercase;
     font-size: 14px;
@@ -52,9 +52,10 @@
     background-color: #d8e1f5;
     border: none;
     border-radius: 10px;
+    margin-top: 15px;
 }
 
-.senha-form-container {
+.senha-login-container {
     position: relative;
 }
 
@@ -67,7 +68,7 @@
     color: #6b7280;
 }
 
-.options {
+.options-login {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,14 +77,14 @@
     margin-top: 10px;
 }
 
-.options label{
+.options-login label{
     font-size: 16px;
     font-weight: 600;
     padding: 10px 0;
     cursor: pointer;
 }
 
-.options a {
+.options-login a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -114,7 +115,7 @@
     align-items: center;
     margin: 20px 0;
     color: #595959;
-    width: 320px;
+    width: 100%;
 }
 
 .divisor::before, 
@@ -157,3 +158,75 @@
     text-align: left;
 }
 
+/*Media Queries*/
+
+@media (min-width: 360px) and (max-width:812px){
+    .form-login {
+        display: block;
+        padding: 20px;
+    }
+
+    .form-login-welcome h1 {
+        font-size: 38px;
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .form-login-welcome p {
+        width: 60%;
+        margin-left: 20px;
+    } 
+
+    .form-login-welcome img {
+        width: 300px;
+    }
+
+    .form-login-container {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .login-input, .social-login {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+    .toggle-password {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1024px) {
+    .form-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-login-welcome h1 {
+        font-size: 40px;
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .form-login-welcome p {
+        margin-left: 20px;
+    } 
+
+    .form-login-welcome img {
+        width: 500px;
+    }
+
+    .form-login-container {
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    .social-btn {
+        margin-left: 0;
+    } 
+}

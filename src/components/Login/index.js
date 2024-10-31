@@ -39,7 +39,7 @@ const Login = () => {
   };
 
   return (
-    <section className="form">
+    <section className="form-login">
 
       <div className="form-login-welcome">
         <h1>Seja Bem-Vindo ao CloudSync</h1>
@@ -49,10 +49,10 @@ const Login = () => {
         <img src="/images/cloud.png" alt="cloud-image" />
       </div>
 
-      <div className="form-container">
+      <div className="form-login-container">
 
         <form onSubmit={handleSubmit}> 
-          <div className="login-form-container">
+          <div className="login-container">
             <span>Entrar</span>
             <h2>Faça seu login agora</h2>
             <input 
@@ -66,7 +66,7 @@ const Login = () => {
             {erros.email && <p className="erro-mensagem">{erros.email}</p>}
           </div>
 
-          <div className="senha-form-container">
+          <div className="senha-login-container">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Digite sua senha"
@@ -84,7 +84,7 @@ const Login = () => {
             </span>
           </div>
 
-          <div className="options">
+          <div className="options-login">
             <label>
               <input type="checkbox" /> Manter Conectado
             </label>
